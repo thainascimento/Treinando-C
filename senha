@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <string.h> // biblioteca para poder usar a função que compara strings strcmp. eu decoro/leio como "STRING COMPARE"
+
+// função principal
+int main() {
+    
+    char senha1 [20];
+    char senha2 [20];
+    char nome [20];
+    
+    printf("Olá, qual seu nome? \n");
+    scanf ("%s", nome);
+    printf("%s, digite sua senha para cadastro. Ela deve conter até 20 caracteres: \n", nome);
+    scanf("%s", senha1);
+    printf("Confirme a senha: \n");
+    scanf("%s", senha2);
+    
+    if (strcmp(senha1, senha2) == 0) { /* essa função compara uma variavél com a outra. 
+    Se elas forem iguais, ele retorna 0. */
+        printf ("Parabéns, %s senha cadastrada! \n", nome);
+    }
+    else {
+        printf ("Senha invalida, cadastro não concluido!");
+    }
+return 0;
+}
