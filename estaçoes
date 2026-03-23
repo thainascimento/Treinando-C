@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+// função principal
+int main() {
+    char estacao; //não existe string em C, o char é o caracter.
+    
+    printf("Digite a primeira letra de uma estação do ano:\n");
+    scanf("%c", &estacao); /* o %x tem que ser de acordo com o tipo de variável declarado. 
+    se é um char, por exemplo, %c. se é um int, %d de decimal ja que int é inteiro e por ai vai. */
+    
+    
+    if (estacao == 'i') { // todo if vc abre { e depois fecha o }
+    printf("Vixi, inverno. Melhor usar uma jaqueta. leva touquinha tb.)");
+    }
+    else if (estacao == 'o') { // pode escrever quantos else if quiser. tb abre { e fecha }.
+    printf("Outono.. Leva um casaquinho, vai fazer frio e pode chover.");
+    }
+    else if (estacao == 'p') {
+    printf("Prima Vera! Provavelmente vai fazer calor mas leva um casaquinho, pode esfriar a noite. ou não");
+    }
+    else if (estacao == 'v') {
+    printf("Ai que delicia o VERAUNNNN! sem jaquetinha, sem blusinha de frio, passe muito protetor solar!");
+    }
+    else { // finaliza com o else. também abre { e fecha }.
+    printf("Opção invalida");
+    }
+    return 0;
+}
