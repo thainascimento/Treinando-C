@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+// função principal
+int main() {
+    
+    int idade; //nao existe string em C, o char é o caracter.
+    char nome[20];
+    
+    printf("Digite seu nome:\n");
+    scanf("%s", nome); // %s = sequência de caracteres (string)
+    printf("Olá, %s! \n", nome); // tanto no scanf quanto no printf, quando você vai solicitar ou mostrar o valor da variável nome, não é necessario por o &. isso porque nome já é um endereço.  
+    printf("Digite sua idade: \n");
+    scanf("%d", &idade); // %d de decimal. & significa o endereço na memoria onde o valor será guardado.
+    
+    if (idade <= 17) {
+        printf("%s, vc é menor de idade.", nome);
+    }
+    else if (idade >= 18) {
+        printf("%s, vc já é maior idade!", nome);
+        }
+return 0;
+}
